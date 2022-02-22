@@ -42,7 +42,7 @@ a:active
 		background: green;
 		position: fixed;
 		box-shadow: 0 1em 6em 2em rgba(0, 0, 0, 0.63);
-		
+		z-index: 100;
 	}
 .header>div
 {
@@ -113,11 +113,78 @@ a:active
 		display: block;
 		
 	}
+.slide_1
+{
+	display: block;
+	width: 100%;
+	height: 100vh;
+}
+.in_slide_1
+{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: calc(100vh - 10vw);
+	top: 10vw;
+	background:black;
+	z-index: 1;
+}
+.in_slide_1>div
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	transition: 0.35s;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.5;
+}
+.in_slide_1>div:nth-child(1)
+{
+	background-image: url("Pictures/doors slide 1.jpg");
+}
+.in_slide_1>div:nth-child(2)
+{
+	background-image: url("Pictures/windows.jpg");
+	padding: 1vw;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 1vw;
+}
+.in_slide_1>div:nth-child(2)>div
+{
+	background: #FFFFFF;
+	
+}
+
+.in_slide_1>div:nth-child(3)
+{
+	background-image: url("Pictures/kitchen slide 1.jpg");
+}
+.in_slide_1>div:nth-child(1):hover
+{
+	opacity: 1;
+	width: 110%;
+}
+.in_slide_1>div:nth-child(2):hover
+{
+	width: 110%;
+	opacity: 1;
+
+}
+.in_slide_1>div:nth-child(3):hover
+{
+	opacity: 1;
+	width: 110%;
+}
+
 	diva{
 		width: 100%;
 		height: 100vh;
 		background-image: url("Pictures/фон 2.jpg");
-/*		background: #FFFFFF;*/
+/*		background: #FFFFFF; 
+*/
 		display: block;
 	}
 
