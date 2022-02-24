@@ -211,13 +211,14 @@ a:active
 {
 	color: rgba(122,122,122,1.00);
 	text-align: center;
-	margin-top:1vw;
+	margin-top:2vw;
 }
 .in_slide_2>p
 {
 	color: rgba(122,122,122,1.00);
 	text-align: center;
 	margin-top:1vw;
+	margin: 2vw;
 }
 @media (max-width: 1200px) {
 .header {
