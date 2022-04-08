@@ -16,8 +16,13 @@
 	src: url("fonts/OpenSansCondensed-Light.ttf");
 	
 }
-
-
+::-webkit-scrollbar {
+  width: 0;
+}
+html {
+	scroll-behavior: smooth;
+	
+}
 
 
 body
@@ -132,7 +137,8 @@ a:active
 }
 .in_slide_1>a
 {
-	display: block;
+    display: block;
+    position: relative;
 	width: 100%;
 	height: 100%;
 	transition: 0.35s;
@@ -141,33 +147,60 @@ a:active
 	opacity: 0.5;
 	cursor: default;
 }
+.in_slide_1>a>div
+{
+    
+    display: block;
+    width: 25vw;
+    position: absolute;
+    left: 50%;
+    bottom: 2vw;
+    transform: translateX(-50%);
+    opacity: 0;
+    text-align: justify;
+    transition: 0.35s;
+    text-shadow: 
+		-0   -1px 2px #000000,
+		 0   -1px 2px #000000,
+		-0    1px 2px #000000,
+		 0    1px 2px #000000,
+		-1px -0   2px #000000,
+		 1px -0   2px #000000,
+		-1px  0   2px #000000,
+		 1px  0   2px #000000,
+		-1px -1px 2px #000000,
+		 1px -1px 2px #000000,
+		-1px  1px 2px #000000,
+		 1px  1px 2px #000000,
+		-1px -1px 2px #000000,
+		 1px -1px 2px #000000,
+		-1px  1px 2px #000000,
+		 1px  1px 2px #000000;
+}
 .in_slide_1>a:nth-child(1)
 {
 	background-image: url("Pictures/doors slide 1.jpg");
+    color: white;
 }
 .in_slide_1>a:nth-child(2)
 {
 	background-image: url("Pictures/windows.jpg");
-	padding: 1vw;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-gap: 1vw;
+    color: white;
 }
-.in_slide_1>a:nth-child(2)>div
-{
-	background: #FFFFFF;
-	
-}
-
 .in_slide_1>a:nth-child(3)
 {
 	background-image: url("Pictures/kitchen slide 1.jpg");
+    color: white;
 }
 .in_slide_1>a:nth-child(1):hover
 {
 	opacity: 1;
 	width: 110%;
+}
+.in_slide_1>a:nth-child(1):hover div
+{
+	opacity: 1;
+
 }
 .in_slide_1>a:nth-child(2):hover
 {
@@ -175,10 +208,18 @@ a:active
 	opacity: 1;
 
 }
+.in_slide_1>a:nth-child(2):hover div
+{
+	opacity: 1;
+}
 .in_slide_1>a:nth-child(3):hover
 {
 	opacity: 1;
 	width: 110%;
+}
+.in_slide_1>a:nth-child(3):hover div
+{
+	opacity: 1;
 }
 
 
@@ -205,21 +246,76 @@ a:active
 	display: block;
 	width: 100%;
 	height: 100%;
+	color: rgba(0,0,0,1.00);
 }
 
-.in_slide_2>h1
-{
-	color: rgba(122,122,122,1.00);
-	text-align: center;
-	margin-top:2vw;
-}
+
 .in_slide_2>p
 {
 	color: rgba(122,122,122,1.00);
-	text-align: center;
+	text-align: justify ;
 	margin-top:1vw;
 	margin: 2vw;
+    font-size: 1.4vw;
 }
+.slide_3
+{
+	width: 100%;
+	background-image: url("Pictures/фон 2.jpg");
+	background: rgba(255,255,255,1.00);
+}
+.heading
+{
+	color:rgba(0,0,0,1.00);
+	text-align: center;
+	display: table;
+	background-image:url("Pictures/gold.jpg");
+	background-position: top;
+	background-size: cover;
+	height: 8vw;
+	width: 100%;
+}
+.heading
+{
+	transition: 50s;
+	background-position: center;
+
+}
+.heading>p
+{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.slide_4
+{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-gap: 0.2vw;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 10vw);
+}
+div.in_slide_4
+{
+    display: block;
+    margin-top: 0.2vw;
+    height: 100%;
+    width: 100%;
+    background: #353535;
+    
+    
+}
+div.h1
+{
+    text-align: center;
+    display: block;
+    background: #DC1013;
+    margin: auto;
+    height: 80%;
+    width: 80%;
+}
+
 @media (max-width: 1200px) {
 .header {
 	height: 30vw;
