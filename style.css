@@ -31,8 +31,13 @@ body
 	font-size: 1.5vw;
 	background: black;
 }
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
 
-a,
+div.header a,
 a:active
 {
 	text-decoration: none;
@@ -247,6 +252,7 @@ a:active
 	width: 100%;
 	height: 100%;
 	color: rgba(0,0,0,1.00);
+	overflow: scroll;
 }
 
 
@@ -268,11 +274,12 @@ a:active
 {
 	color:rgba(0,0,0,1.00);
 	text-align: center;
+	font-weight: 600;
 	display: table;
 	background-image:url("Pictures/gold.jpg");
 	background-position: top;
 	background-size: cover;
-	height: 8vw;
+	height: 6vw;
 	width: 100%;
 }
 .heading
@@ -289,14 +296,21 @@ a:active
 }
 .slide_4
 {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 10vw);
+}
+.in_slide_4
+{
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
     grid-gap: 0.2vw;
     position: relative;
     width: 100%;
-    height: calc(100vh - 10vw);
+    height: calc(100vh - 16vw);
 }
-div.in_slide_4
+div.in_in_slide_4
 {
     display: block;
     margin-top: 0.2vw;
@@ -308,13 +322,31 @@ div.in_slide_4
 }
 div.h1
 {
+	cursor: default;
     text-align: center;
+	padding-top: 5%;
+	height: 15%;
     display: block;
-    background: #DC1013;
     margin: auto;
-    height: 80%;
-    width: 80%;
+    width: 100%;
+	background: #252525;
 }
+
+div.h1>a
+{
+	color: aliceblue;
+}
+.about2
+{
+	display: block;
+	width: 90%;
+	height: 80%;
+	position: relative;
+	left: 9%;
+	top: 5%;
+	
+}
+
 
 @media (max-width: 1200px) {
 .header {
