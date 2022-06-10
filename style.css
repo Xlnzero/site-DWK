@@ -34,13 +34,16 @@ body
 a
 {
 	text-decoration: none;
-	color: inherit;
+	color:rgba(89,89,89,1.00);
 }
 
-div.header a,
-a:active
+.header_a
 {
 	text-decoration: none;
+	color:gold;
+}
+.button_a
+{
 	color:rgba(89,89,89,1.00);
 }
 	body {
@@ -48,7 +51,7 @@ a:active
 	}
 	.header{
 		width: 100%;
-		height:10vw;
+		height:15vh;
 		display: flex;
 		background: green;
 		position: fixed;
@@ -76,6 +79,7 @@ a:active
 	vertical-align: middle;
 	text-align: center;
 }
+
 .header>div:nth-child(2){background: black}
 .header>div:nth-child(3){
 	display: grid;
@@ -88,6 +92,7 @@ a:active
 	display: flex;
 	width: 100%;
 	height: 100%;
+	padding: 1px;
 	background: black;
 }
 .button>a{
@@ -95,6 +100,7 @@ a:active
 	width: 100%;
 	height: 100%;
 	display: table;
+	background: #0F0F0F;
 	
 }
 .button>a:hover{
@@ -135,8 +141,8 @@ a:active
 	position: relative;
 	display: flex;
 	width: 100%;
-	height: calc(100vh - 10vw);
-	top: 10vw;
+	height: calc(100vh - 15vh);
+	top: 15vh;
 	background:black;
 	z-index: 1;
 }
@@ -239,20 +245,126 @@ a:active
 .slide_2
 {
 	width: 100%;
-	height: calc(100vh - 10vw);
+	height: calc(100vh - 15vh);
 	background-image: url("Pictures/фон 2.jpg");
-	
+
+
 }
 
 .in_slide_2
 {
-	border: 50px solid rgba(221,217,217,0.23);
-	background: rgba(0,0,0,0.77);
+	display: grid;
+	grid-template-rows:  0.5fr 1fr 1fr;
+	border: 1em solid rgba(221,217,217,0);
+	background: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.in_in_slide_2
+{
+	display: grid;
+	height: 100%;
+	width: 100%;
+	grid-template-columns:  1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+.Services
+{
+	display: block;
+	background: #222222;
+	justify-content: center;
+	padding: 4%;
+	transition: ease 0.3s;
+}
+
+.S
+{
+	border-radius: 0.8em;
+	background-size:cover;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-repeat: space;
+	background-position: center;
+	transition: ease 0.3s;
+	cursor: pointer;
+}
+.Services:hover  
+{
+	padding: 6%
+}
+.S:hover  
+{
+	box-shadow: 0 0 4em 0.4em rgba(0, 0, 0, 0.93);
+}
+.S_doors
+{
+	background-image: url("Pictures/bg.png");	
+	
+}
+.S_windows
+{
+	background-image: url("Pictures/1622841984_11-phonoteka_org-p-tekstura-okna-krasivo-12.jpg");	
+}
+.S_kitchen
+{
+	background-image: url(Pictures/0_aeb01_5b9b0be3_orig.jpg);	
+}
+.main_invisible_Services
+		{
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			overflow: hidden;
+			display: none;
+			z-index: 10001;
+			top: 0;
+			
+		}
+
+.in_main_invisible_Services
+{
+		height: 100%;
+		background: rgba(0,0,0,0.6);
+		padding: 5em 5em 5em 5em;
+}
+.background_d
+{
+	background-image: url("Pictures/bg.png");
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+
+}
+.background_w
+{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-image: url( "Pictures/1622841984_11-phonoteka_org-p-tekstura-okna-krasivo-12.jpg")
+}
+.background_k
+{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-image: url( "Pictures/0_aeb01_5b9b0be3_orig.jpg")
+}
+.Services_text_about
+{
+	overflow: scroll;
 	display: block;
 	width: 100%;
 	height: 100%;
-	color: rgba(0,0,0,1.00);
-	overflow: scroll;
+	color: white;
+	z-index: 10005;
 }
 
 
@@ -260,9 +372,8 @@ a:active
 {
 	color: rgba(122,122,122,1.00);
 	text-align: justify ;
-	margin-top:1vw;
-	margin: 2vw;
-    font-size: 1.4vw;
+	padding: 2vw 2vw 0 2vw;
+    font-size: 1em;
 }
 .slide_3
 {
@@ -279,12 +390,11 @@ a:active
 	background-image:url("Pictures/gold.jpg");
 	background-position: top;
 	background-size: cover;
-	height: 6vw;
+	height: 11vh;
 	width: 100%;
 }
 .heading
 {
-	transition: 50s;
 	background-position: center;
 
 }
@@ -299,7 +409,7 @@ a:active
     display: block;
     position: relative;
     width: 100%;
-    height: calc(100vh - 10vw);
+    height: calc(100vh - 15vh - 11vh);
 }
 .in_slide_4
 {
@@ -308,7 +418,7 @@ a:active
     grid-gap: 0.2vw;
     position: relative;
     width: 100%;
-    height: calc(100vh - 16vw);
+    height: 100%;
 }
 div.in_in_slide_4
 {
@@ -324,8 +434,8 @@ div.h1
 {
 	cursor: default;
     text-align: center;
-	padding-top: 5%;
-	height: 15%;
+	padding-top: 3%;
+	height: 7vh;
     display: block;
     margin: auto;
     width: 100%;
@@ -338,16 +448,34 @@ div.h1>a
 }
 .about2
 {
-	display: block;
 	width: 90%;
 	height: 80%;
 	position: relative;
 	left: 9%;
-	top: 5%;
+}
+.about2 a
+{
+	color: #B0B0B0;
+	display: block;
+	padding: 10px;
+	width: 88%;
+	border: 2px solid #222222;
+	vertical-align: middle;
 	
 }
 
 
+.none
+{
+	
+	height: calc(100vh - 15vh);
+	display: block;
+	position: absolute;
+	top:-100%;
+	z-index: -10000;
+	width: 0px;
+	
+}
 @media (max-width: 1200px) {
 .header {
 	height: 30vw;

@@ -94,3 +94,14 @@ function fun28(){$('.g_gal_bol28').css('display','flex');document.body.style.ove
 function inv2() {$('.nvid1').css('display','none');$('.nvid2').css('display','block');$('.nvid').css('display','grid');}/*<!--Кнопка для разворачивания-->*/
 	
 function inv(){$('.nvid1').css('display','block');$('.nvid2').css('display','none');$('.nvid').css('display','none');}	/*<!--Кнопка для сворачивания-->*/
+
+
+
+
+function fun_Services_doors(){$('.mis_doors').css('display','flex');document.body.style.overflow = 'hidden'}
+function fun_Services_windows(){$('.mis_windows').css('display','flex');document.body.style.overflow = 'hidden'}
+function fun_Services_kitchen(){$('.mis_kitchen').css('display','flex');document.body.style.overflow = 'hidden'}
+
+
+function funclose2(){$('.main_invisible_Services').css('display','none');document.body.style.overflow = 'auto'}
+

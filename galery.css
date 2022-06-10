@@ -21,9 +21,9 @@ font-style: normal;
 	gar>div>div
 		{
 			overflow: hidden;
+			opacity: 1;
 			background-size: cover;
 			background-position: center;
-			transition: opacity ease 0.45s;
 			z-index: 1;
 
 		}
@@ -71,7 +71,7 @@ font-style: normal;
 			width: 35vw;
 			height: 35vh;
 			background: rgba(0,0,0,0.6);
-			opacity: 0;
+			opacity: 1;
 			color: aliceblue;
 			font-size: 2vh;
 			transition: ease 0.5s;
@@ -84,10 +84,10 @@ font-style: normal;
 		{
 			text-decoration: none;
 		}
-		
-		gar>div>div:hover div
+	
+		a.gsert2:hover div
 		{
-			opacity: 1;
+			background: rgba(0,0,0,0);
 		}
 
 gar>div.vid>div:nth-child(	1	){background-image: url( "	Gallery/	1	.jpg");}
