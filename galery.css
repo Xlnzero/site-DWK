@@ -69,7 +69,7 @@ font-style: normal;
 			text-align: center;
             position: relative;
 			width: 35vw;
-			height: 35vh;
+			height: calc(100vh - 20vw);
 			background: rgba(0,0,0,0.6);
 			opacity: 1;
 			color: aliceblue;
@@ -207,7 +207,11 @@ gar>div.nvid>div:nth-child(	16	){background-image: url( "	Gallery/	28	.jpg");}
 				z-index: 50001;
 				cursor: pointer;
 				pointer-events: all;
+				
+   -webkit-filter: drop-shadow( 2px 1px 3px rgba(0, 0, 0, 0.77) );
+
 }
+
 		a.cssbox_close {
 			right: 5%;
 			top: 5%;
