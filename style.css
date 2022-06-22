@@ -134,7 +134,7 @@ a
  
 	logo{
 		
-		background-image:url("Pictures/logo.jpg");
+		background-image:url("Pictures/logo main3.svg");
 		background-size:contain;
 		background-position:center;
 		background-repeat: no-repeat;
@@ -145,8 +145,7 @@ a
 	}
 logo:hover
 {
-		background-image:url("Pictures/logo 2.jpg");
-	 
+		background-image:url("Pictures/top.svg");
 		
 }
 .slide_1
@@ -303,7 +302,7 @@ logo:hover
 }
 .S_doors
 {
-	background-image: url("Pictures/bg.png");	
+	background-image: url("Pictures/bg.jpg");	
 	
 }
 .S_windows
@@ -336,7 +335,7 @@ logo:hover
 }
 .background_d
 {
-	background-image: url("Pictures/bg.png");
+	background-image: url("Pictures/bg.jpg");
 	display: block;
 	height: 100%;
 	width: 100%;
