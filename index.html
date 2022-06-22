@@ -14,7 +14,23 @@
 	<title>EUROPEAN STYLE</title>
 </head>
     <body>
-		
+	<script type="text/javascript">
+
+
+
+
+function init() {
+// выходим, если функция уже выполнялась
+if (arguments.callee.done) return;
+
+// устанавливаем флаг, чтобы функция не исполнялась дважды
+arguments.callee.done = true;
+
+$('.main').show();
+};
+
+window.onload = init;
+</script>	
 <div class="header">
 		<div><p><a class="header_a" style="cursor: default;">DOORS WINDOWS KITCHEN</a></p></div>
 	
