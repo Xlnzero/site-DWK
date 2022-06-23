@@ -105,3 +105,4 @@ function fun_Services_kitchen(){$('.mis_kitchen').css('display','flex');document
 
 function funclose2(){$('.main_invisible_Services').css('display','none');document.body.style.overflow = 'auto'}
 
+
