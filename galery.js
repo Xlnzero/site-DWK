@@ -19,7 +19,7 @@ function funnext15(){$('.g_gal_bol15').css('display','none');$('.g_gal_bol16').c
 function funnext16(){$('.g_gal_bol16').css('display','none');$('.g_gal_bol17').css('display','flex');}
 function funnext17(){$('.g_gal_bol17').css('display','none');$('.g_gal_bol18').css('display','flex');}
 function funnext18(){$('.g_gal_bol18').css('display','none');$('.g_gal_bol19').css('display','flex');}
-function funnext19(){$('.g_gal_bol19').css('display','none');$('.g_gal_bol20').css('display','flex');}
+function funnext19(){$('.g_gal_bol19').css('display','none');$('.g_gal_bol20').css('display','flex');} 
 function funnext20(){$('.g_gal_bol20').css('display','none');$('.g_gal_bol21').css('display','flex');}
 function funnext21(){$('.g_gal_bol21').css('display','none');$('.g_gal_bol22').css('display','flex');}
 function funnext22(){$('.g_gal_bol22').css('display','none');$('.g_gal_bol23').css('display','flex');}
